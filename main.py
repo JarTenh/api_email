@@ -7,7 +7,7 @@ from send_email import send_email
 api_key = os.getenv("NEWSAPI_KEY")
 topic = "ukrainewar"
 url = f"https://newsapi.org/v2/everything" \
-    f"?q=ukrainewar&" \
+    f"?q={topic}&" \
     f"language=en&" \
     f"from=2023-03-27&" \
     f"sortBy=publishedAt&" \
